@@ -1,6 +1,4 @@
-class Receipt < ApplicationRecord
-  has_many :items
-
+class Point < ApplicationRecord
   def points
     @points = 0
     @points += retailer.length
