@@ -3,8 +3,8 @@ class Receipt < ApplicationRecord
 
   def points
     @points = 0
-    @points += retailer.length
-    @points += items.length / 2
+    @points += @retailer.length
+    @points += items.count / 2
     if total[-1].to_i == 0 && total[-2].to_i == 0
       @points += 50
     elsif total[-1].to_i == 5 && total[-2].to_i == 2
