@@ -62,7 +62,7 @@ class ReceiptsController < ApplicationController
 end
 ```
 ## Final Product
-Here is the post route being run through Insomnia on "http://localhost:3000/receipts/process"
+Here is the post route being run through Insomnia on http://localhost:3000/receipts/process
 [Screenshot 2022-12-19 at 12 46 10 PM](https://user-images.githubusercontent.com/107561577/208497790-d35b5c9e-8db9-4525-bbba-3df5efe4f243.png)
 -Things to improve:
   1. Getting the GET request to calculate the points. I had a hard time getting the items to get factored into the receipt with a a has_many relationship. I also am not sure if my code for calculating the points is correct because I was not able to test it without getting the items to work. I would love to learn more through the apprenticeship about how to approach this problem.
